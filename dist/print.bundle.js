@@ -69,52 +69,10 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_join__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_join___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash_join__);
-
-
-function writeSomething () {
-
-  const element = document.createElement('div');
-  
-  element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash_join___default()(['hello,', 'webpack'], ' ');
-
-  return element;
+/* harmony export (immutable) */ __webpack_exports__["default"] = printMe;
+function printMe() {
+  console.log('I get called from print.js!');
 }
-
-document.body.appendChild(writeSomething());
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-/** Used for built-in method references. */
-var arrayProto = Array.prototype;
-
-/* Built-in method references for those with the same name as other `lodash` methods. */
-var nativeJoin = arrayProto.join;
-
-/**
- * Converts all elements in `array` into a string separated by `separator`.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Array
- * @param {Array} array The array to convert.
- * @param {string} [separator=','] The element separator.
- * @returns {string} Returns the joined string.
- * @example
- *
- * _.join(['a', 'b', 'c'], '~');
- * // => 'a~b~c'
- */
-function join(array, separator) {
-  return array == null ? '' : nativeJoin.call(array, separator);
-}
-
-module.exports = join;
-
 
 /***/ })
 /******/ ]);
