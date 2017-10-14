@@ -27,4 +27,15 @@ In above example, although we do not execute `writeSomething`, all `lodash` code
 
 [3]
 > Note that `webpack` **will not** alter any code other than `import` and `export` statements. If you are using other `ES2015` features, make sure to use a transpiler such as `Babel` or `Bublé` via `webpack`'s loader system.
+<br>
+
+[4]
+Without `source map` configuration in `webpack`, when error occurs, console info will look like this:
+![error-in-bundle](./_assets/error-in-bundle.png)
+After add config
+``` javascript
+devtool: 'inline-source-map'
+```
+Again, exact error location will display:
+![error-in-file](./_assets/error-in-file.png)
 

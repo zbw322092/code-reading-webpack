@@ -18,4 +18,16 @@ function writeSomething () {
   return element;
 }
 
-document.body.appendChild(writeSomething());
+let element = writeSomething();
+
+document.body.appendChild(element);
+
+if (module.hot) {
+  module.hot.accept('./print.js', () => {
+    console.log('Accepting the updated printMe module!');
+    
+    document.body.removeChild(element);
+    element = writeSomething();
+    document.body.appendChild(element);
+  });
+}

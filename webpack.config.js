@@ -1,11 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './src/scripts/writeSomething.js',
-    print: './src/scripts/print.js'
+    app: './src/scripts/writeSomething.js'
   },
   output: {
     filename: '[name].bundle.js',    
@@ -15,8 +15,14 @@ module.exports = {
     new ManifestPlugin(),
     new HtmlWebpackPlugin({
       title: 'Output Management'
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  },
   module: {
     rules: [
       {
