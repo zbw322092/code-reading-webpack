@@ -5,16 +5,21 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './src/scripts/writeSomething.js'
+    app: './src/scripts/writeSomething.js',
+    more: './src/scripts/writeSomething.js'
   },
   output: {
-    filename: '[name].bundle.js',    
-    path: path.resolve(__dirname, 'dist')
+    filename: '[name].[chunkhash].js',
+    path: path.resolve(__dirname, 'dist'),
+    chunkFilename: '[name].bundle.js'    
   },
   plugins: [
     new ManifestPlugin(),
     new HtmlWebpackPlugin({
       title: 'Output Management'
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'common'
     })
   ],
   module: {

@@ -17,3 +17,16 @@ https://medium.com/@rajaraodv/webpacks-hmr-react-hot-loader-the-missing-manual-2
 ## source map
 1. (todo) An Introduction to Source Maps
 http://blog.teamtreehouse.com/introduction-source-maps <br>
+
+## cache
+[1] Predictable long term caching with Webpack
+https://medium.com/webpack/predictable-long-term-caching-with-webpack-d3eee1d3fa31 <br>
+
+[2] Long-term caching of static assets with Webpack
+https://medium.com/@okonetchnikov/long-term-caching-of-static-assets-with-webpack-1ecb139adb95 <br>
+
+[3] webpack & caching
+https://gist.github.com/sokra/ff1b0290282bfa2c037bdb6dcca1a7aa <br>
+
+[4] Advanced Webpack
+https://presentations.survivejs.com/advanced-webpack/#/0?_k=rkwo4v

@@ -1,4 +1,10 @@
 {
-  "app.js": "app.bundle.js",
-  "app.js.map": "app.bundle.js.map"
+  "0.bundle.js": "0.bundle.js",
+  "0.bundle.js.map": "0.bundle.js.map",
+  "app.js": "app.89ddf2c03393e36457d6.js",
+  "app.js.map": "app.89ddf2c03393e36457d6.js.map",
+  "common.js": "common.c8017498146a3c8954b3.js",
+  "common.js.map": "common.c8017498146a3c8954b3.js.map",
+  "more.js": "more.db612ebbd68b59b58c3a.js",
+  "more.js.map": "more.db612ebbd68b59b58c3a.js.map"
 }

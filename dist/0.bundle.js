@@ -1,0 +1,2 @@
+webpackJsonp([0],[function(e,o,l){"use strict";Object.defineProperty(o,"__esModule",{value:!0}),o.default=function(){console.log("webpack is more clear!")},console.log("print module is loaded")}]);
+//# sourceMappingURL=0.bundle.js.map
