@@ -1,4 +1,4 @@
 {
   "app.js": "app.bundle.js",
-  "print.js": "print.bundle.js"
+  "app.js.map": "app.bundle.js.map"
 }

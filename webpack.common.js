@@ -15,14 +15,8 @@ module.exports = {
     new ManifestPlugin(),
     new HtmlWebpackPlugin({
       title: 'Output Management'
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ],
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist',
-    hot: true
-  },
   module: {
     rules: [
       {
