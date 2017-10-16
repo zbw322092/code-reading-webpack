@@ -38,4 +38,18 @@ devtool: 'inline-source-map'
 ```
 Again, exact error location will display:
 ![error-in-file](./_assets/error-in-file.png)
+<br>
+
+[5] Loaders
+> webpack treats every file (.css, .html, .scss, .jpg, etc.) as a module. However, **webpack itself only understands JavaScript**.
+**Loaders in webpack transform these files into `modules` as they are added to your dependency graph**.
+
+> Loaders are **transformations** that are applied on the source code of a module. They allow you to **pre-process** files as you `import` or “load” them.
+
+<br>
+
+[6]Plugins
+> While Loaders only execute transforms on a per-file basis, plugins are most commonly used to perform actions and custom functionality on "compilations" or "chunks" of your bundled modules (and so much more!).
+
+> Plugins are the **backbone** of webpack. webpack itself is built on the same plugin system that you use in your webpack configuration!
 
